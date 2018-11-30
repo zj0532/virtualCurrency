@@ -1,0 +1,8 @@
+.foot_height{
+    height: 80px;
+    margin-top: 200px;
+    border-top: 1px solid lightgrey;
+}
+.foot_height span{
+    line-height: 80px;
+}

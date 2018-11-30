@@ -1,0 +1,48 @@
+ul li{
+    list-style: none;
+    line-height: 50px;
+}
+ul{
+    padding-left: 0;
+}
+.menu{
+    line-height: 55px;
+}
+.menu ul li{
+    float:left;
+}
+.menu ul li:not(:first-child){
+    margin-left: 10px;
+}
+.menu ul{
+    padding: 0;
+}
+.menu ul li a{
+    font-size: 13px;
+}
+.menu ul li a:first-child{
+    color: #0072EF;
+}
+.menu ul li a:not(:first-child){
+    color: #666;
+}
+.notices_one{
+    margin-top: 20px;
+    height: 55px;
+}
+.sou_suo{
+    margin-top: 10px;
+    padding-right: 0;
+}
+.xin_bi ul{
+    padding-left: 0;
+}
+.gong_gao{
+    margin-top: 30px;
+}
+h3{
+    font-weight: 600;
+}
+.content ul li{
+    border-bottom: 1px solid lightgrey;
+}

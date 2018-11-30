@@ -1,0 +1,160 @@
+ul li{
+    list-style: none;
+    line-height: 50px;
+}
+ul{
+    padding-left: 0;
+}
+.menu{
+    line-height: 55px;
+}
+.menu ul li{
+    float:left;
+}
+.menu ul li:not(:first-child){
+    margin-left: 10px;
+}
+.menu ul{
+    padding: 0;
+}
+.menu ul li a{
+    font-size: 13px;
+    color: #0072EF;
+}
+.sou_suo{
+    margin-top: 10px;
+    padding-right: 0;
+}
+h3{
+    font-size: 15px;
+}
+
+.article-sidebar ul li{
+    margin-top: 10px;
+}
+.article-sidebar ul li a{
+    margin-left: 0;
+    width: 170px;
+    height: 50px;
+}
+.article-sidebar ul li a:hover{
+    background-color:#0072EF;
+    color: #333333;
+}
+.btn-lg{
+    text-align: left;
+}
+.xuan_zhong{
+    background-color:#0072EF !important;
+}
+.btn-primary-menu{
+    color: #333333;
+    background-color:#ffffff;
+    border: none;
+}
+.content{
+    margin-top: 20px;
+}
+h1{
+    margin-top: 0;
+}
+.article-author{
+    margin-top: 20px;
+}
+.avatar img{
+    height: 40px;
+    width: 40px;
+}
+.article-meta{
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.meta-data{
+    color: #666;
+    font-size: 13px;
+    font-weight: 300;
+}
+.meta-group li{
+    float: left;
+    line-height: 20px;
+}
+.avatar{
+    padding-left: 0;
+}
+.article-subscribe{
+    border-color: #0072EF;
+    background-color: #FFFFFF;
+    color:#0072EF;
+    width: 66px;
+    height: 30px;
+}
+.article-subscribe:hover{
+    background-color: #0072EF;
+}
+.text{
+    margin-top: 30px;
+}
+.share li{
+    float: left;
+}
+.share li:not(:first-child){
+    margin-left: 10px;
+}
+.article-votes-question{
+    margin-top: 30px;
+}
+.article-votes-question span{
+    font-size: 15px;
+    font-weight: 400;
+}
+.article-votes-controls{
+    margin-top: 10px;
+}
+.article-votes-controls a{
+    width: 90px;
+    height: 30px;
+    line-height: 12px;
+    margin-left: 10px;
+    background:#ffffff;
+    color: #0072EF;
+}
+.article-votes-controls a:hover{
+    background:#0072EF;
+}
+.article-votes-count{
+    margin-top: 10px;
+}
+.article-more-questions{
+    margin-top: 50px;
+}
+.article-more-questions a{
+    color:#0072EF ;
+}
+.article-more-questions a:hover{
+    text-decoration: none;
+    border-bottom: 1px solid #0072EF;
+}
+.article-relatives{
+    margin-top: 30px;
+    border-top: 1px solid lightgrey;
+}
+.article-relatives h3{
+    font-size: 15px;
+    font-weight: 600;
+}
+.article-relatives ul li{
+    line-height: 40px;
+}
+.article-relatives ul li a{
+    color: #0072EF;
+}
+.article-comments{
+    border-top: 1px solid lightgrey;
+}
+.wen_zhang_xian{
+    border-top: 1px solid lightgrey;
+}
+.wen_zhang_xian p{
+    margin-top: 10px;
+}
