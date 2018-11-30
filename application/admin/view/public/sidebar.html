@@ -1,0 +1,70 @@
+<aside>
+  <div id="sidebar" class="nav-collapse ">
+    <ul class="sidebar-menu">
+{if condition="$Think.session.admin_leixing eq 1"}
+      {eq name="sidebar" value="1"}
+      <li class="active">
+      {else/}
+      <li>
+      {/eq}
+        <a class="" href="/admcncp/">
+          <i class="icon-user"></i>
+            <span>管理员</span>
+          </a>
+      </li>
+{/if}
+
+      {eq name="sidebar" value="2"}
+      <li class="active">
+      {else/}
+      <li>
+      {/eq}
+        <a class="" href="/admcncp/free_ride">
+          <i class="icon-align-left"></i>
+            <span>顺风车</span>
+          </a>
+      </li>
+
+        {eq name="sidebar" value="3"}
+        <li class="active">
+            {else/}
+        <li>
+            {/eq}
+            <a class="" href="/admcncp/oilFee">
+                <i class="icon-comments"></i>
+                <span>油费</span>
+            </a>
+        </li>
+        {eq name="sidebar" value="4"}
+        <li class="active">
+            {else/}
+        <li>
+            {/eq}
+            <a class="" href="/admcncp/yeWu">
+                <i class="icon-comments"></i>
+                <span>日常消费</span>
+            </a>
+        </li>
+      {eq name="sidebar" value="5"}
+      <li class="active">
+      {else/}
+      <li>
+      {/eq}
+        <a class="" href="/admcncp/lxwm/1">   
+          <i class="icon-comments"></i>
+            <span>易耗过期</span>
+          </a>
+      </li>
+        {eq name="sidebar" value="6"}
+        <li class="active">
+            {else/}
+        <li>
+            {/eq}
+            <a class="" href="/admcncp/lxwm/1">
+                <i class="icon-comments"></i>
+                <span>日常加油</span>
+            </a>
+        </li>
+    </ul>
+  </div>
+</aside>

@@ -1,0 +1,90 @@
+<div class="foot_bj"></div>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="__STATIC__/admin/js/bootstrap.min.js"></script>
+<script src="__STATIC__/admin/js/jquery.jSlider.js"></script>
+<script src="__STATIC__/admin/js/video.js"></script>
+<script>
+    $(function () {
+        //右下菜单
+        var x = $(window).width()-60;
+        var y = $(window).height()-250;
+        $('#qq_chat_email').css({'position':'fixed','right':0,'bottom':'15%','z-index':'3'});
+        $('.img_qq,.img_we_chat,.img_mail').css({'width':'40px','height':'40px'});
+        $('.img_we_chat,.img_mail').css({'margin-top':'10px'});
+        $('#div_we_chat_brackgroup').css({'position':'absolute','right':'50px','bottom':'-90px','z-index':'3'});
+        $('#div_text_bg').css({'position':'absolute','right':'50px','bottom':'0px','z-index':'3'});
+        $('#div_text').css({'position':'absolute','right':'50px','bottom':'5px','z-index':'3'});
+        //微信
+        $('#div_we_chat').mouseover(function () {
+            $('#div_we_chat_brackgroup').show();
+        }).mouseout(function () {
+            $('#div_we_chat_brackgroup').hide();
+        })
+        //邮箱
+        $('#div_mail').mouseover(function () {
+            $('#div_text_bg').show();
+        }).mouseout(function () {
+            $('#div_text_bg').hide();
+        })
+    })
+    $('#ibk_div_menu').click(function () {
+        $('#ibk_div_menu_list').toggle();
+    })
+    //关于我们
+    $('.ibk_div_head_text ul li a').mouseover(function () {
+       $('#ibk_div_menu_text_bj').hide();
+    });
+    $('#ordinary').mouseover(function () {
+        $('#news_div_menu_text_bj').hide();
+    });
+    $('#long_lighting').mouseover(function () {
+        $('#news_div_menu_text_bj').hide();
+    })
+    //联系我们表单提交
+    $('#lian_xwm').click(function(){
+        $.ajax({
+            type: "POST",
+            url: '/contentus',
+            data: {lx_language:$("#lx_language").val(),
+                    lx_name:$("#lx_name").val(),
+                    lx_email:$('#lx_email').val(),
+                    lx_county_daima:$('#lx_county_daima').val(),
+                    lx_phone:$('#lx_phone').val(),
+                    lx_county_daima:$('#lx_county_daima').val(),
+                    },
+            success: function(data){
+                console.log(data);
+                if(data.status == 200){
+                    alert(data.message);
+                }else{
+                    alert(data.message);
+                }
+            }
+        });
+    })
+    //点击视频
+    $('#img_pic').click(function () {
+        $('#example_video').append('<div class="video_position"></div><div class="video_title" id="video_title">\n' +
+            '            <span>DP房产</span><a id="close" class="iconfont icon-close" href="#" onclick="close1()"></a>\n' +
+            '            <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none"\n' +
+            '                   poster="http://video-js.zencoder.com/oceans-clip.png"\n' +
+            '                   data-setup="{}">\n' +
+            '                <source src="__STATIC__/www/video/home/DP.mp4" type=\'video/mp4\' />\n' +
+            '                <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->\n' +
+            '                <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->\n' +
+            '            </video>\n' +
+            '        </div></div>');
+        $('.head_bj,#gray').css({'pointer-events':'none','-webkit-filter':'grayscale(100%)','filter':'grayscale(100%)'});
+    })
+    //关闭视频
+    function close1(){
+        $('#video_title').remove();
+        $('.head_bj,#gray').css({'pointer-events':'auto','-webkit-filter':'grayscale(0%)','filter':'grayscale(0%)'});
+    }
+    //tab
+    $('#remraam').mouseover(function () {
+        $('#profile').css('display','inline')
+    })
+</script>
+</body>
+</html>

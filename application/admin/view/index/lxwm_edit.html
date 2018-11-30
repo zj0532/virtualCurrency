@@ -1,0 +1,84 @@
+<!--头部文件-->
+{include file="public/head" /}
+
+<body>
+  <section id="container" class="">
+    <!--头部栏-->
+    {include file="public/header"}
+    <!--侧边栏-->
+    {include file="public/sidebar"}
+    <!--main content start-->
+    
+    
+    
+    <section id="main-content">
+      <section class="wrapper">
+        <!-- page start-->
+        <div class="row">
+          <div class="col-lg-12">
+            <section class="panel">
+              <header class="panel-heading">
+                编辑 新闻资讯
+              </header>
+              <div class="panel-body">
+                             <form class="form-horizontal" role="form" method="post" enctype="multipart/form-data" >
+                                 <div class="form-group">
+                                     <label class="col-lg-2 control-label">语言</label>
+                                     <div class="col-lg-10">
+                                         <select class="form-control m-bot15" name="ns_language">
+                                          {if condition="$list.lx_language=='cn'"}
+                                          <option  value="cn" selected>中文</option>
+                                          {elseif condition="$list.lx_language=='en'"}
+                                          <option  value="en" selected>英文</option>
+                                          {elseif condition="$list.lx_language=='ae'"}
+                                          <option  value="ae" selected>阿拉伯文</option>
+                                          {/if}                       
+                                              <option  value="cn">中文</option>
+                                              <option  value="en">英文</option>
+                                              <option  value="ae">阿拉伯文</option>
+                                          </select>
+                                     </div>
+                                 </div>
+                                 <div class="form-group">
+                                     <label class="col-lg-2 control-label">联系人姓名</label>
+                                     <div class="col-lg-10">
+                                         <input class="form-control" id="lx_name" name="lx_name" value="{$list.lx_name}" readonly>
+                                     </div>
+                                 </div>
+                                 <div class="form-group">
+                                     <label class="col-lg-2 control-label">邮箱</label>
+                                     <div class="col-lg-10">
+                                         <input class="form-control" id="lx_email" name="lx_email" value="{$list.lx_email}" readonly>
+                                     </div>
+                                 </div>
+                                 <div class="form-group">
+                                     <label class="col-lg-2 control-label">电话</label>
+                                     <div class="col-lg-10">
+                                         <input class="form-control" id="lx_phone" name="lx_phone" value="+{$list.lx_county_daima} - {$list.lx_phone}" readonly>
+                                     </div>
+                                 </div>
+                                 <div class="form-group">
+                                     <label class="col-lg-2 control-label">回访记录</label>
+                                     <div class="col-lg-10">
+                                         <textarea name="lx_huifang" class="form-control " id="lx_huifang"  rows="5" required>{$list.lx_huifang}</textarea>
+                                     </div>
+                                 </div>
+                                  <div class="form-group">
+                                     <div class="col-lg-offset-2 col-lg-10">
+                                     <input type="hidden" id="id" name="id" value="{$list.lx_id}">
+                                     <input type="hidden" id="page" name="page" value="{$page}">
+                                         <button class="btn btn-danger" type="submit">提交</button>
+                                     </div>
+                                 </div>
+                             </form>
+                         </div>
+            </section>
+          </div>
+        </div>
+        <!-- page end-->
+      </section>
+    </section>
+    <!--main content end-->
+  </section>
+  <!--尾部文件-->
+  {include file="public/foot" /}
