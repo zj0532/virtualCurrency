@@ -1,0 +1,138 @@
+.news_head_bj{
+    background-image: url("/static/www/img/news/head_bj.png");
+    width:1920px ;
+    height: 246px;
+}
+.news_div_logo{
+    width: 230px;
+    height: 34px;
+    position: absolute;
+    left: 262px;
+    top: 50px;
+}
+.news_img_logo{
+    width: 100%;
+    height: 100%;
+}
+.news_div_menu{
+    width: 29px;
+    height: 18px;
+    position: absolute;
+    left: 1631px;
+    top: 65px;
+}
+.news_img_menu{
+    width: 100%;
+    height: 100%;
+}
+.news_div_menu_list{
+    width: 83px;
+    height: 115px;
+    position: absolute;
+    background-image: url("/static/www/img/menu_backgroup.png");
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    position: absolute;
+    left: 1630px;
+    top: 88px;
+    display: none;
+}
+.news_div_menu_list ul{
+    margin:10px 0px 0 -25px;
+}
+
+.news_div_menu_list ul li{
+    width: 100px;
+}
+ul li{
+    list-style-type: none;
+    color: #ffffff;
+}
+
+ul li a{
+    text-align: center;
+    color: #585858;
+    font-size: 12px;
+    font-family:Lantinghei SC;
+    line-height:25px;
+}
+
+ul li a:hover{
+    color: #302f2f;
+}
+
+.ibk_div_menu_list{
+    width: 83px;
+    height: 115px;
+    background-image:url("/static/www/img/menu_backgroup.png");
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    position: absolute;
+    left: 1630px;
+    top: 88px;
+    display: none;
+}
+.ibk_div_menu_list ul{
+    margin:10px 0px 0 -25px;
+}
+
+.ibk_div_menu_list ul li{
+    width: 100px;
+}
+ul li{
+    list-style-type: none;
+    color: #ffffff;
+}
+
+ul li a{
+    text-align: center;
+    color: #585858;
+    font-size: 12px;
+    font-family:Lantinghei SC;
+    line-height:25px;
+}
+
+ul li a:hover{
+    color: #302f2f;
+}
+
+.ibk_div_head_text{
+    width:524px;
+    height:17px;
+    position: absolute;
+    left: 1182px;
+    top: 216px;
+}
+
+.ibk_div_head_text ul{
+    margin-top: -16px;
+}
+
+.ibk_div_head_text ul li{
+    float: left;
+}
+
+.ibk_div_head_text ul li a{
+    font-size:16px;
+    font-family:FZLTHJW--GB1-0;
+    font-weight:normal;
+    color:rgba(255,255,255,1);
+    line-height:55px;
+    margin:0 65px  0 65px;
+}
+.div_we_chat_brackgroup{
+    display: none;
+}
+.div_text_bg{
+    display: none;
+}
+
+.long_lighting:hover{
+    display: block;
+    background-image: url("/static/www/img/menu_text_long_bj.png");
+}
+.ordinary:hover{
+    display: block;
+    background-image: url("/static/www/img/news/new_bj.png");
+    height: 46px;
+}
