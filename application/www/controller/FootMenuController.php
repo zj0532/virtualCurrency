@@ -43,6 +43,15 @@ class FootMenuController extends Controller
         }
         return $this->fetch('rate');
     }
+    //充值多久到账
+    public function account(){
+        try{
+
+        }catch (\Exception $e){
+            Log::write($e->getMessage(),'error');
+        }
+        return $this->fetch('account');
+    }
     //交易指南
     public function transaction(){
         try{
