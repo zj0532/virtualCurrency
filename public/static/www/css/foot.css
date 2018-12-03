@@ -4,4 +4,16 @@
 }
 .foot_height span{
     line-height: 80px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+}
+.powered-by-zendesk svg{
+    width: 15px;
+    height: 10px;
+    fill:#a5a5a5;
+}
+.powered-by-zendesk a{
+    font-size: 13px;
+    color: #a5a5a5;
 }

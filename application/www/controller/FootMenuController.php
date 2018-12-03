@@ -14,7 +14,7 @@ class FootMenuController extends Controller
         }catch (\Exception $e){
             Log::write($e->getMessage(),'error');
         }
-        return $this->fetch('foot_menu');
+        return $this->fetch('noticess');
     }
     //使用条款
     public function terms_of_use(){

@@ -27,7 +27,7 @@ ul{
     color: #666;
 }
 .notices_one{
-    margin-top: 20px;
+    margin-top: 30px;
     height: 55px;
 }
 .sou_suo{
@@ -39,6 +39,10 @@ ul{
 }
 .gong_gao{
     margin-top: 30px;
+}
+.gong_gao h1{
+    font-size: 32px;
+    font-weight: 400;
 }
 h3{
     font-weight: 600;
